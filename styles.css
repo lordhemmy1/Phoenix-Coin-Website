@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+nav .nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero {
+  background: url('assets/phoenix-bg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.cta-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tokenomics-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tokenomics-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roadmap li {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
