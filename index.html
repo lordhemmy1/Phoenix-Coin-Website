@@ -8,169 +8,121 @@
   <meta name="author" content="Phoenix Coin Team">
   <meta property="og:title" content="Phoenix Coin (PHNX)">
   <meta property="og:description" content="Phoenix Coin is a deflationary, community-driven cryptocurrency for a decentralized future.">
-  <meta property="og:image" content="assets/phoenix-logo.webp">
-  <meta property="og:url" content="https://phnx.site">
+  <meta property="og:image" content="assets/phoenix-logo.png">
+  <meta property="og:url" content="https://your-website-link.com">
   <title>Phoenix Coin (PHNX)</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Chart.js for visualizations -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/phoenix-logo.png">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <style>
-    .hero {
-      background: linear-gradient(45deg, #ff6f61, #e62e00);
-      padding: 80px 20px;
-    }
-    #roadmap-section .roadmap-item {
-      transition: transform 0.3s ease;
-    }
-    #roadmap-section .roadmap-item.active {
-      transform: scale(1.1);
-    }
-  </style>
 </head>
 <body>
-
   <!-- Header Section -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/phoenix-logo.webp" alt="Phoenix Coin Logo" width="50">
-          Phoenix Coin
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tokenomics">Tokenomics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#airdrop">Airdrop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#roadmap">Roadmap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#whitepaper">Whitepaper</a>
-            </li>
-          </ul>
-        </div>
+    <nav>
+      <div class="logo">
+        <img src="assets/phoenix-logo.png" alt="Phoenix Coin Logo">
       </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#airdrop">Airdrop</a></li>
+        <li><a href="#whitepaper">Whitepaper</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero text-center text-white">
-    <h1 class="display-4">Phoenix Coin (PHNX)</h1>
-    <p class="lead">The Resilient Digital Asset for a Decentralized Future</p>
-    <a href="#airdrop" class="btn btn-lg btn-primary">Claim Airdrop Now</a>
+  <section class="hero">
+    <h1>Phoenix Coin (PHNX)</h1>
+    <p>The Resilient Digital Asset for a Decentralized Future</p>
+    <a href="#roadmap" class="cta-button">Learn More</a>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center">About Phoenix Coin</h2>
-      <p class="lead text-center">Phoenix Coin (PHNX) is a deflationary cryptocurrency built on Binance Smart Chain (BSC), designed to offer long-term value through token burns, liquidity generation, and community-driven governance.</p>
-    </div>
+  <section id="about">
+    <h2>About Phoenix Coin</h2>
+    <p>Phoenix Coin (PHNX) is a deflationary cryptocurrency built on Binance Smart Chain (BSC), designed to offer long-term value through token burns, liquidity generation, and community-driven governance.</p>
+    <p>We are calling on developers, influencers, and community members to join us in shaping the future of Phoenix Coin. Whether you're a developer looking to contribute to our ecosystem, an influencer eager to spread the word, or an individual wanting to be part of a thriving community, your involvement is crucial to our success. Help us drive adoption, innovation, and growth for PHNX!</p>
   </section>
 
   <!-- Tokenomics Section -->
-  <section id="tokenomics" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Tokenomics</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card p-4 shadow">
-            <h4>Total Supply</h4>
-            <p>1,000,000,000 PHNX</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-4 shadow">
-            <h4>Burn Mechanism</h4>
-            <p>2% Fee per transaction: 1% burned, 1% added to liquidity.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-4 shadow">
-            <h4>Max Burn Cap</h4>
-            <p>50% of total supply will be burned.</p>
-          </div>
-        </div>
+  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <div class="tokenomics-container">
+      <div class="tokenomics-box">
+        <h3>Total Supply</h3>
+        <p>1,000,000,000 PHNX</p>
       </div>
+      <div class="tokenomics-box">
+        <h3>Burn Mechanism</h3>
+        <p>2% Fee per transaction: 1% burned, 1% added to liquidity.</p>
+      </div>
+      <div class="tokenomics-box">
+        <h3>Max Burn Cap</h3>
+        <p>50% of total supply will be burned.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics Distribution Section -->
+  <section id="tokenomics-distribution">
+    <h2>PHNX Tokenomics Distribution</h2>
+    <p>The distribution of Phoenix Coin tokens ensures a fair allocation and transparency within the ecosystem. Here is the breakdown:</p>
+    <ul>
+      <li>50% Burn Mechanism (2% fee per transaction)</li>
+      <li>20% Community and Ecosystem Growth</li>
+      <li>15% Developer Fund</li>
+      <li>10% Liquidity Pool</li>
+      <li>5% Reserve Fund</li>
+    </ul>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap">
+    <h2>Roadmap</h2>
+    <div class="roadmap">
+      <canvas id="roadmapChart"></canvas>
     </div>
   </section>
 
   <!-- Airdrop Section -->
-  <section id="airdrop" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Airdrop</h2>
-      <p class="lead text-center">Participate in the Phoenix Coin Airdrop to get started with PHNX! Get your free tokens by completing simple tasks.</p>
-      <div class="text-center">
-        <a href="https://your-airdrop-link.com" class="btn btn-lg btn-warning">Join the Airdrop</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PHNX Distribution (Pie Chart) -->
-  <section id="distribution" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>PHNX Token Distribution</h2>
-      <canvas id="distributionChart" width="400" height="400"></canvas>
-    </div>
-  </section>
-
-  <!-- Roadmap Section -->
-  <section id="roadmap" class="py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-      <h2 class="text-center">Roadmap</h2>
-      <div class="roadmap" id="roadmap-section">
-        <div class="roadmap-item p-4 mb-3 shadow" id="phase1">
-          <h4>Phase 1: Launch & Initial Liquidity</h4>
-          <p>Contract Deployment, Initial Token Distribution, and Marketing Campaign</p>
-        </div>
-        <div class="roadmap-item p-4 mb-3 shadow" id="phase2">
-          <h4>Phase 2: Community Building & Governance</h4>
-          <p>Launch of Staking and Liquidity Mining Pools, DAO Introduction</p>
-        </div>
-        <div class="roadmap-item p-4 mb-3 shadow" id="phase3">
-          <h4>Phase 3: Expanding Utility</h4>
-          <p>Integration with DeFi platforms, NFT and Gaming dApps</p>
-        </div>
-        <div class="roadmap-item p-4 mb-3 shadow" id="phase4">
-          <h4>Phase 4: Long-term Sustainability</h4>
-          <p>Max Burn Cap Reached, Full DAO Implementation, Sustainable Ecosystem Growth</p>
-        </div>
-      </div>
-    </div>
+  <section id="airdrop">
+    <h2>Airdrop</h2>
+    <p>Participate in the Phoenix Coin Airdrop to get started with PHNX! Get your free tokens by completing simple tasks.</p>
+    <a href="https://your-airdrop-link.com" class="cta-button">Join the Airdrop</a>
   </section>
 
   <!-- Whitepaper Section -->
-  <section id="whitepaper" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Whitepaper</h2>
-      <p class="text-center">Download the full whitepaper to understand the full potential of Phoenix Coin and its ecosystem.</p>
-      <div class="text-center">
-        <a href="assets/whitepaper.pdf" class="btn btn-lg btn-info">Download Whitepaper</a>
-      </div>
+  <section id="whitepaper">
+    <h2>Whitepaper</h2>
+    <p class="text-center">Download the full whitepaper to understand the full potential of Phoenix Coin and its ecosystem.</p>
+    <div class="text-center">
+      <a href="assets/phnxwhitepaper.pdf" class="btn btn-lg btn-info" download="phnxwhitepaper.pdf">Download Whitepaper</a>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section id="contact">
+    <h2>Follow Us</h2>
+    <div class="social-media">
+      <a href="https://www.youtube.com/c/TalesLegendStudios" target="_blank">YouTube</a>
+      <a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com/company/yourcompany" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+      <a href="https://t.me/yourtelegram" target="_blank">Telegram</a>
+      <a href="https://twitter.com/yourxhandle" target="_blank">X (Twitter)</a>
+      <a href="https://www.tiktok.com/@yourtiktok" target="_blank">TikTok</a>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer class="bg-dark text-white text-center py-4">
+  <footer>
     <p>&copy; 2024 Phoenix Coin. All Rights Reserved.</p>
-    <div>
-      <a href="https://www.youtube.com/c/TalesLegendStudios" class="text-white mx-2">YouTube</a>
-      <a href="https://www.facebook.com/YourPage" class="text-white mx-2">Facebook</a>
-      <a href="https://www.linkedin.com/company/yourcompany" class="text-white mx-2">LinkedIn</a>
-      <a href="https://www.instagram.com/yourprofile" class="text-white mx-2">Instagram</a>
-      <a href="https://t.me/yourtelegram" class="text-white mx-2">Telegram</a>
-      <a href="https://twitter.com/yourxhandle" class="text-white mx-2
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+    </html>
