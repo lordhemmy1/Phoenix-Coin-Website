@@ -65,29 +65,16 @@
     <div class="container text-center">
       <h2>Tokenomics</h2>
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Total Supply</h5>
-              <p class="card-text">1,000,000,000 PHNX</p>
-            </div>
-          </div>
+        <div class="col-lg-6 mb-4">
+          <canvas id="tokenomicsChart" width="400" height="400"></canvas>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Burn Mechanism</h5>
-              <p class="card-text">2% Fee per transaction: 1% burned, 1% added to liquidity.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Max Burn Cap</h5>
-              <p class="card-text">50% of total supply will be burned.</p>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <h5>Total Supply: 1,000,000,000 PHNX</h5>
+          <p>The tokenomics behind Phoenix Coin (PHNX) ensures sustainability and long-term growth:</p>
+          <ul>
+            <li><strong>Burn Mechanism:</strong> 2% Fee per transaction (1% burned, 1% added to liquidity)</li>
+            <li><strong>Max Burn Cap:</strong> 50% of the total supply will be burned</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -97,7 +84,11 @@
   <section id="roadmap" class="py-5 bg-light">
     <div class="container text-center">
       <h2>Roadmap</h2>
-      <canvas id="roadmapChart" width="400" height="200"></canvas>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="assets/roadmap-illustration.gif" alt="Roadmap Animation" class="img-fluid">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -110,10 +101,10 @@
     </div>
   </section>
 
-  <!-- Social Media Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Follow Us</h2>
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Phoenix Coin. All Rights Reserved.</p>
       <div class="d-flex justify-content-center">
         <a href="https://www.youtube.com/c/TalesLegendStudios" target="_blank" class="btn btn-outline-dark mx-2">YouTube</a>
         <a href="https://www.facebook.com/YourPage" target="_blank" class="btn btn-outline-dark mx-2">Facebook</a>
@@ -124,11 +115,6 @@
         <a href="https://www.tiktok.com/@yourtiktok" target="_blank" class="btn btn-outline-dark mx-2">TikTok</a>
       </div>
     </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Phoenix Coin. All Rights Reserved.</p>
   </footer>
 
   <!-- Bootstrap JS & Popper.js -->
@@ -138,4 +124,4 @@
   <!-- JavaScript for Chart.js -->
   <script src="script.js"></script>
 </body>
-</html>
+          </html>
