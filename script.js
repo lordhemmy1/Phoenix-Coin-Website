@@ -1,23 +1,29 @@
-// Chart.js Roadmap Visualization
-const ctx = document.getElementById('roadmapChart').getContext('2d');
+// Tokenomics Pie Chart with Chart.js
+const ctx = document.getElementById('tokenomicsChart').getContext('2d');
 
-const roadmapChart = new Chart(ctx, {
-  type: 'bar',
+const tokenomicsChart = new Chart(ctx, {
+  type: 'pie',
   data: {
-    labels: ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4'],
+    labels: ['Burned Tokens (50%)', 'Circulating Supply (50%)'],
     datasets: [{
-      label: 'Phoenix Coin Roadmap',
-      data: [10, 30, 60, 100], // Progress percentage for each phase
-      backgroundColor: ['#ff6f61', '#e62e00', '#ff6600', '#d84e2a'],
+      data: [500000000, 500000000],
+      backgroundColor: ['#e62e00', '#ff6f61'],
       borderColor: '#fff',
       borderWidth: 2
     }]
   },
   options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-        max: 120
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      tooltip: {
+        callbacks: {
+          label: function(tooltipItem) {
+            return tooltipItem.label + ': ' + tooltipItem.raw.toLocaleString();
+          }
+        }
       }
     }
   }
