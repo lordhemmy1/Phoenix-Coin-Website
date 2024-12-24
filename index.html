@@ -3,92 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Phoenix Coin (PHNX) - A deflationary cryptocurrency for the decentralized future.">
-  <title>Phoenix Coin (PHNX)</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/phoenix-logo.png">
+  <title>Phoenix Coin (PHNX) | Rise Above Volatility</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="assets/phoenix-logo.png" alt="Phoenix Coin Logo">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Phoenix Coin Logo" class="logo"> Phoenix Coin
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#tokenomics">Tokenomics</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Phoenix Coin (PHNX)</h1>
-    <p>The Resilient Digital Asset for a Decentralized Future</p>
-    <a href="#roadmap" class="cta-button">Learn More</a>
-  </section>
+  <header class="hero text-center text-white">
+    <div class="container">
+      <h1>Welcome to Phoenix Coin (PHNX)</h1>
+      <p>Rise Above Volatility. Build a Sustainable Future.</p>
+      <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+  </header>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>About Phoenix Coin</h2>
-    <p>Phoenix Coin (PHNX) is a deflationary cryptocurrency built on Binance Smart Chain (BSC), designed to offer long-term value through token burns, liquidity generation, and community-driven governance.</p>
+  <section id="about" class="about py-5">
+    <div class="container text-center">
+      <h2>About Phoenix Coin</h2>
+      <p class="lead">Phoenix Coin is a deflationary cryptocurrency designed to create long-term value through scarcity, liquidity generation, and community-driven governance.</p>
+    </div>
   </section>
 
-  <!-- Tokenomics Section -->
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <div class="tokenomics-container">
-      <div class="tokenomics-box">
-        <h3>Total Supply</h3>
-        <p>1,000,000,000 PHNX</p>
-      </div>
-      <div class="tokenomics-box">
-        <h3>Burn Mechanism</h3>
-        <p>2% Fee per transaction: 1% burned, 1% added to liquidity.</p>
-      </div>
-      <div class="tokenomics-box">
-        <h3>Max Burn Cap</h3>
-        <p>50% of total supply will be burned.</p>
+  <!-- Features Section -->
+  <section id="features" class="features py-5 bg-light">
+    <div class="container text-center">
+      <h2>Features</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <img src="img/feature-icons/deflationary.png" alt="Deflationary" class="feature-icon">
+          <h3>Deflationary Mechanism</h3>
+          <p>Reduce token supply with every transaction, increasing scarcity and value.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/feature-icons/liquidity.png" alt="Liquidity Generation" class="feature-icon">
+          <h3>Liquidity Generation</h3>
+          <p>1% of every transaction strengthens liquidity pools to stabilize prices.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/feature-icons/community.png" alt="Community Governance" class="feature-icon">
+          <h3>Community Governance</h3>
+          <p>Empower holders to decide the coin's future through decentralized voting.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Roadmap Section -->
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <div class="roadmap">
-      <ul>
-        <li><strong>Phase 1:</strong> Launch & Initial Liquidity</li>
-        <li><strong>Phase 2:</strong> Community Building & Governance</li>
-        <li><strong>Phase 3:</strong> Expanding Utility</li>
-        <li><strong>Phase 4:</strong> Long-Term Sustainability</li>
-      </ul>
+  <section id="roadmap" class="roadmap py-5">
+    <div class="container text-center">
+      <h2>Roadmap</h2>
+      <img src="img/roadmap.png" alt="Roadmap" class="img-fluid">
     </div>
   </section>
 
-  <!-- Social Media Section -->
-  <section id="contact">
-    <h2>Follow Us</h2>
-    <div class="social-media">
-      <a href="https://www.youtube.com/c/TalesLegendStudios" target="_blank">YouTube</a>
-      <a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com/company/yourcompany" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
-      <a href="https://t.me/yourtelegram" target="_blank">Telegram</a>
-      <a href="https://twitter.com/yourxhandle" target="_blank">X (Twitter)</a>
-      <a href="https://www.tiktok.com/@yourtiktok" target="_blank">TikTok</a>
+  <!-- Contact Section -->
+  <section id="contact" class="contact py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p>Follow us on social media or join our community!</p>
+      <div class="social-icons mt-4">
+        <a href="#" class="social-icon"><img src="img/social-icons/youtube.png" alt="YouTube"></a>
+        <a href="#" class="social-icon"><img src="img/social-icons/facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="img/social-icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="#" class="social-icon"><img src="img/social-icons/instagram.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="img/social-icons/telegram.png" alt="Telegram"></a>
+        <a href="#" class="social-icon"><img src="img/social-icons/twitter.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="img/social-icons/tiktok.png" alt="TikTok"></a>
+      </div>
     </div>
   </section>
 
-  <!-- Footer Section -->
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-white">
     <p>&copy; 2024 Phoenix Coin. All Rights Reserved.</p>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
