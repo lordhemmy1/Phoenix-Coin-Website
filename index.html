@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Coin ($PHNX) - Resilient Digital Asset</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Phoenix Coin ($PHNX)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #3a3a55;
+        }
+        .navbar-brand, .nav-link {
+            color: #f8f9fa !important;
+        }
+        .jumbotron {
+            background: linear-gradient(to right, #ff6f61, #e63946);
+            color: white;
+            text-align: center;
+            padding: 4rem;
+        }
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            background-color: #ff6f61;
+            color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .feature-card h5 {
+            font-weight: bold;
+        }
+        .feature-card:hover {
+            background-color: #e63946;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        #tokenomics-pie {
+            max-width: 400px;
+            margin: auto;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">Phoenix Coin</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#use-cases">Use Cases</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#security">Security</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Phoenix Coin ($PHNX)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#features">Key Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section text-center text-white py-5" style="background: linear-gradient(to bottom, #ff4500, #dc143c);">
-        <div class="container">
-            <h1 class="display-4">Welcome to Phoenix Coin ($PHNX)</h1>
-            <p class="lead">The resilient digital asset for a decentralized future.</p>
-            <a href="#features" class="btn btn-primary btn-lg shadow">Learn More</a>
-        </div>
-    </header>
+    <div class="jumbotron">
+        <h1>Welcome to Phoenix Coin ($PHNX)</h1>
+        <p>A Deflationary Cryptocurrency for a Decentralized Future</p>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Phoenix Coin</h2>
-            <p class="text-center">Phoenix Coin ($PHNX) is a deflationary, community-driven cryptocurrency built for long-term growth. Inspired by the mythical phoenix, it represents resilience and sustainability in the decentralized economy.</p>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-5 bg-light">
+    <!-- Key Features Section -->
+    <section id="features" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Key Features</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">Deflationary Model</h5>
-                            <p class="card-text">1% of every transaction is burned, reducing supply and driving value.</p>
-                        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card text-center p-3">
+                        <h5>Deflationary Mechanism</h5>
+                        <p>With every transaction, tokens are burned to increase scarcity and value.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">Liquidity Generation</h5>
-                            <p class="card-text">1% of each transaction is added to the liquidity pool, ensuring stability.</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="card feature-card text-center p-3">
+                        <h5>Liquidity Generation</h5>
+                        <p>1% of every transaction is added to liquidity pools, ensuring stability and reducing slippage.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">Community Governance</h5>
-                            <p class="card-text">Holders can propose and vote on future upgrades and partnerships.</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="card feature-card text-center p-3">
+                        <h5>Community Governance</h5>
+                        <p>Token holders decide on key governance matters through a DAO structure.</p>
                     </div>
                 </div>
             </div>
@@ -83,62 +91,48 @@
     </section>
 
     <!-- Tokenomics Section -->
-    <section id="tokenomics" class="py-5">
+    <section id="tokenomics" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Tokenomics</h2>
-            <p><strong>Total Supply:</strong> 1 Billion PHNX</p>
-            <ul>
-                <li><strong>1% Burn Fee:</strong> Reduces supply with each transaction.</li>
-                <li><strong>1% Liquidity Fee:</strong> Enhances trading stability.</li>
-                <li><strong>Max Burn Cap:</strong> Burn stops at 50% of total supply.</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Total Supply:</strong> 1,000,000,000 PHNX</p>
+                    <p><strong>Burn Mechanism:</strong> 2% per transaction split into 1% burn and 1% liquidity.</p>
+                    <p><strong>Max Burn Cap:</strong> 50% of total supply (500 million PHNX).</p>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="tokenomics-pie"></canvas>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Use Cases Section -->
-    <section id="use-cases" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Use Cases</h2>
-            <ul>
-                <li><strong>Peer-to-Peer Payments:</strong> Low fees for seamless transactions.</li>
-                <li><strong>DeFi Integration:</strong> Participate in staking, yield farming, and liquidity pools.</li>
-                <li><strong>dApp Ecosystem:</strong> Ideal for gaming, NFTs, and digital services.</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Script for Pie Chart -->
+    <script>
+        const ctx = document.getElementById('tokenomics-pie').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Initial Supply (50%)', 'Burn Mechanism (50%)'],
+                datasets: [{
+                    label: 'Token Distribution',
+                    data: [50, 50],
+                    backgroundColor: ['#ff6f61', '#e63946'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
 
-    <!-- Security Section -->
-    <section id="security" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Security & Transparency</h2>
-            <ul>
-                <li>Built on the secure BEP-20 standard.</li>
-                <li>Thoroughly audited smart contracts.</li>
-                <li>Liquidity locking for added trust.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Roadmap</h2>
-            <ul>
-                <li><strong>Phase 1:</strong> Contract Deployment, Marketing, DEX Listings.</li>
-                <li><strong>Phase 2:</strong> Community Governance, Staking, Partnerships.</li>
-                <li><strong>Phase 3:</strong> DeFi Integration, dApp Expansion, CEX Listings.</li>
-                <li><strong>Phase 4:</strong> DAO Implementation, Ecosystem Growth.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Phoenix Coin. Together, We Rise.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-    </html>
+</html>
