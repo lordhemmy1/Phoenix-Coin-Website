@@ -8,6 +8,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Ensure all cards have the same height */
+        .card {
+            min-height: 200px;
+            border-radius: 10px;
+        }
+
+        /* Gradient backgrounds for Use Cases */
+        .use-case-card {
+            color: white;
+        }
+
+        .use-case-1 {
+            background: linear-gradient(135deg, #ff7f50, #ff4500);
+        }
+
+        .use-case-2 {
+            background: linear-gradient(135deg, #32cd32, #008000);
+        }
+
+        .use-case-3 {
+            background: linear-gradient(135deg, #1e90ff, #4682b4);
+        }
+
+        /* Gradient for Features */
+        .bg-danger {
+            background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+        }
+
+        .bg-warning {
+            background: linear-gradient(135deg, #f1c40f, #f39c12) !important;
+        }
+
+        .bg-success {
+            background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,19 +82,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Phoenix Coin</h2>
-            <p class="text-center">
-                Phoenix Coin (PHNX) is a deflationary cryptocurrency designed to offer long-term value through token burns, liquidity generation, and community-driven governance. Built on Binance Smart Chain (BSC) using the BEP-20 standard, PHNX offers a low-cost, scalable solution for decentralized finance (DeFi) and Web3 applications.
-            </p>
-            <p class="text-center">
-                With a unique deflationary mechanism, Phoenix Coin fosters long-term holding, liquidity stability, and decentralized growth. Join the PHNX ecosystem as we rise above volatility and create lasting value in the crypto space.
-            </p>
-        </div>
-    </section>
-
     <!-- Features Section -->
     <section id="features" class="py-5 bg-light">
         <div class="container">
@@ -91,34 +115,13 @@
         </div>
     </section>
 
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Tokenomics</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Key Details</h4>
-                    <ul>
-                        <li><strong>Total Supply:</strong> 1 Billion PHNX</li>
-                        <li><strong>1% Burn Fee:</strong> Reduces supply with each transaction.</li>
-                        <li><strong>1% Liquidity Fee:</strong> Enhances trading stability.</li>
-                        <li><strong>Max Burn Cap:</strong> 50% of total supply.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <canvas id="tokenomicsChart"></canvas>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Use Cases Section -->
     <section id="use-cases" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Use Cases</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="card shadow use-case-card use-case-1">
                         <div class="card-body">
                             <h5 class="card-title">Peer-to-Peer Payments</h5>
                             <p class="card-text">Low fees and deflationary incentives make PHNX ideal for transactions.</p>
@@ -126,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="card shadow use-case-card use-case-2">
                         <div class="card-body">
                             <h5 class="card-title">DeFi Integration</h5>
                             <p class="card-text">Seamlessly integrates into yield farming, staking, and liquidity pools.</p>
@@ -134,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="card shadow use-case-card use-case-3">
                         <div class="card-body">
                             <h5 class="card-title">E-Commerce Payments</h5>
                             <p class="card-text">Revolutionize retail payments with low-cost, secure transactions.</p>
@@ -152,29 +155,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Chart.js Script -->
-    <script>
-        const ctx = document.getElementById('tokenomicsChart').getContext('2d');
-        const tokenomicsChart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: ['Community (40%)', 'Development & Team (20%)', 'Liquidity Pool (20%)', 'Advisors & Partners (10%)', 'Reserve Fund (10%)'],
-                datasets: [{
-                    data: [40, 20, 20, 10, 10],
-                    backgroundColor: ['#FF5733', '#FFC300', '#DAF7A6', '#581845', '#C70039'],
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                    },
-                },
-            }
-        });
-    </script>
 </body>
 
 </html>
